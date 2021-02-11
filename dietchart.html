@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Diet Chart | Manage-Me</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- App css -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href ="css/chart.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+
+        <!-- Top Bar Start -->
+        <div class="topbar">
+
+            <!-- LOGO -->
+            <div class="topbar-left">
+                <a href="index.html" class="logo">
+                    <span class="text-white font-20">
+                        <strong>Manage</strong>Me
+                    </span>
+                </a>
+            </div>
+
+            <!-- Navbar -->
+            <nav class="navbar-custom">
+                <!-- Search input -->
+                <ul class="list-unstyled topbar-nav float-right mb-0">
+                    <li class="hidden-sm">
+                        <a class="nav-link waves-effect waves-light" href="javascript:void(0);" id="btn-fullscreen">
+                            <i class="mdi mdi-fullscreen nav-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="list-unstyled topbar-nav mb-0">  
+                    <li>
+                        <button class="button-menu-mobile nav-link waves-effect waves-light">
+                            <i class="mdi mdi-menu nav-icon"></i>
+                        </button>
+                    </li>
+                </ul>
+
+            </nav>
+            <!-- end navbar-->
+        </div>
+        <!-- Top Bar End -->
+
+        <div class="page-wrapper">
+            <!-- Left Sidenav -->
+            <div class="left-sidenav">
+                <ul class="metismenu left-sidenav-menu" id="side-nav">
+
+                    <li class="menu-title">Main</li>
+
+                    <li>
+                        <a href="index.html">
+                            <i class="mdi mdi-speedometer"></i><span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="todolist.html">
+                            <i class="mdi mdi-email-variant"></i><span>To-Do list</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="events.html">
+                            <i class="mdi mdi-calendar"></i><span>Events</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dietchart.html">
+                            <i class="mdi mdi-calendar"></i><span>Diet Chart</span>
+                        </a>
+                    </li>
+
+                    
+
+                </ul>
+            </div>
+            <!-- end left-sidenav-->
+
+            <!-- Page Content-->
+            <div class="page-content">
+
+                <div class="container-fluid">
+
+                    <!-- Page-Title -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+                                <div class="float-right">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="javascript:void(0);">Manage Me</a></li>
+                                        <li class="breadcrumb-item active">Diet Chart</li>
+                                    </ol>
+                                </div>
+                                <h4 class="page-title">Diet Chart</h4>
+                            </div>
+                        </div>
+                        <button id="scroll" type="button" class="btn btn-primary btn-lg" onclick="window.scrollBy(0, 300)">Add your diet plan</button>
+                    </div>
+                    <!-- end page title end breadcrumb -->
+                    
+                    
+                    
+                </div><!-- container -->
+                
+                <div id = "dtable">
+                    <table>
+                       
+                        <tr>
+                            <th>TIME</th>
+                            <th>SUNDAY</th>
+                            <th>MONDAY</th>
+                            <th>TUESDAY</th>
+                            <th>WEDNESDAY</th>
+                            <th>THURSDAY</th>
+                            <th>FRIDAY</th>
+                            <th>SATURDAY</th>
+                                    
+                       </tr>
+                       <tr>
+                            <th>8AM - 10AM</th>
+                            <td id = "sun8" value = "sun8" class="cell"></td>
+                            <td id = "mon8">Oats with milk</td>
+                            <td id = "tue8" class="cell">2 Banana + 2 Boiled eggs</td>
+                            <td id = "wed8"class="cell">Cornflakes</td>
+                            <td id = "thu8" class="cell">Oats with milk</td>
+                            <td id = "fri8">2 Sandwiches</td>
+                            <td id = "sat8">2 Banana + 2 Boiled eggs</td>
+                                    
+                       </tr>
+                       <tr>
+                            <th>10AM - 12PM</th>
+                            <td id = "sun10"></td>
+                            <td id = "mon10" class="cell"></td>
+                            <td id = "tue10" class="cell"></td>
+                            <td id = "wed10" class="cell"></td>
+                            <td id = "thu10"></td>
+                            <td id = "fri10"></td>
+                            <td id = "sat10"></td>
+                                    
+                       </tr>
+                       <tr>
+                            <th>12PM - 2PM</th>
+                            <td id = "sun12"></td>
+                            <td id = "mon12"></td>
+                            <td id = "tue12"></td>
+                            <td id = "wed12"></td>
+                            <td id = "thu12"></td>
+                            <td id = "fri12"></td>
+                            <td id = "sat12"></td>
+                                    
+                       </tr>
+                       <tr>
+                            <th>2PM - 4PM</th>
+                            <td id = "sun2"></td>
+                            <td id = "mon2"></td>
+                            <td id = "tue2"></td>
+                            <td id = "wed2"></td>
+                            <td id = "thu2"></td>
+                            <td id = "fri2"></td>
+                            <td id = "sat2"></td>
+                                    
+                       </tr>
+                       <tr>
+                            <th>4PM - 6PM</th>
+                            <td id = "sun4"></td>
+                            <td id = "mon4"></td>
+                            <td id = "tue4"></td>
+                            <td id = "wed4"></td>
+                            <td id = "thu4"></td>
+                            <td id = "fri4"></td>
+                            <td id = "sat4"></td>
+                                    
+                       </tr>
+                       <tr>
+                            <th>6PM - 8PM</th>
+                            <td id = "sun6"></td>
+                            <td id = "mon6"></td>
+                            <td id = "tue6"></td>
+                            <td id = "wed6"></td>
+                            <td id = "thu6"></td>
+                            <td id = "fri6"></td>
+                            <td id = "sat6"></td>
+                                    
+                       </tr>
+                       
+                        
+                        
+                    </table>
+                    
+                    
+                </div>
+                <div id ="addtable">
+                   <form id ="fdata" name = "fdata">
+                      <label>Select Day</label>
+                      <select name="fday" id ="fday">
+                         <option value ="Sunday">Sunday</option>
+                         <option value ="Monday">Monday</option>
+                           <option value ="Tuesday">Tuesday</option>
+                           <option value ="Wednesday">Wednesday</option>
+                           <option value ="Thursday">Thursday</option>
+                           <option value ="Friday">Friday</option>
+                           <option value ="Saturday">Saturday</option>
+                        </select><br>
+                        
+                        <label>Select Time</label>
+                        <select name="ftime" id ="ftime">
+                            <option value ="8">8AM - 10AM</option>
+                            <option value="10">10AM - 12PM</option>
+                            <option value ="12">12PM - 2PM</option>
+                            <option value="2">2PM - 4PM</option>
+                            <option value= "4">4PM - 6PM</option>
+                            <option value= "6">6PM - 8PM</option>
+
+                       </select> <br>
+                       <label>Enter Food item</label>
+                       <input type="text" id ="food" name="food"><br>
+                       
+                       <label>&nbsp;</label>
+                       <button type="button" id = "submit">Submit</button>
+                       
+                       
+                       
+                       
+                       
+                   </form>
+                     
+                </div>
+
+                <footer class="footer text-center text-sm-left">
+                    © 2019-2020 Manage-Me
+                </footer>
+            </div>
+            <!-- end page content -->
+        </div>
+        <!-- end page-wrapper -->
+        <!-- Scripts -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Script for diet chart -->
+        <script src="js/diet.js"></script>
+    </body>
+</html>

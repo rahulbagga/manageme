@@ -1,0 +1,11 @@
+td{
+    height: 100px;
+    width: 100px;
+}
+td[id]{
+    cursor: pointer;
+}
+th{
+    background-color: #44a2d2;
+    color:#ffffff;
+}
